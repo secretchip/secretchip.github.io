@@ -24,13 +24,20 @@
     font-weight: bold;
     font-family: Verdana, sans-serif;
   }
-  .paragraph {
+  .paragraph, .links {
     margin: 20px auto;
     width: 90%;
     max-width: 560px;
   }
+  .links a {
+    display: block; /* Each link on its own line */
+    color: #146b9d; /* Matching the color scheme */
+    text-decoration: none; /* Optional: removes underline from links */
+    margin: 10px 0; /* Space between links */
+    font-size: 14px; /* Adjust size as needed */
+  }
   @media (max-width: 600px) {
-    .paragraph {
+    .paragraph, .links {
       width: 100%;
       padding: 0 10px;
     }
@@ -40,10 +47,13 @@
 <body>
 <div class="container">
   <img src="web_images/icon.png" alt="Site Icon">
-  <p class="paragraph"></p>
+  <div class="links">
+    <a href="mailto:hello@secretchip.net">Email us</a>
+    <a href="https://crm.secretchip.net">Client area</a>
+    <a href="tel:+0048573233237">Call us</a>
+  </div>
 </div>
 <script>
-  // Example of inline JavaScript - could be used for enhancements or analytics
   console.log("Page loaded successfully.");
 </script>
 </body>
