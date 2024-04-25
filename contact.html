@@ -10,27 +10,30 @@
     margin: 0;
     padding: 0;
     height: 100vh; /* Set height to viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #f2f2f2; /* Optional background color */
     color: #146b9d; /* Text color */
     font-family: Verdana, sans-serif;
     font-weight: bold;
     font-size: 16px; /* Improved readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   a {
     color: #FFFFFF; /* Link text color */
     text-decoration: none; /* Removes underline from links */
+    background-color: #146b9d; /* Button background color */
+    padding: 10px 20px; /* Button padding */
+    margin-top: 20px; /* Add space above the button */
   }
   .container {
-    margin: 20px; /* Add margin around the iframe */
+    margin-top: 20px; /* Add space above the iframe */
+    margin-bottom: 20px; /* Add space below the iframe */
   }
   iframe {
     width: 600px;
     height: 850px;
     border: none;
-    margin: 20px 0; /* Add margin to both top and bottom of the iframe */
   }
   @media (max-width: 600px) {
     iframe {
@@ -42,9 +45,7 @@
 </head>
 <body>
 <div class="container">
-  <div style="margin-top: 20px;"></div> <!-- Add space on top of the iframe -->
   <iframe src="https://portal.secretchip.net/forms/wtl/21507deb727abc9505aba12d4f0b73a9" frameborder="0" allowfullscreen></iframe>
-  <div style="margin-bottom: 20px;"></div> <!-- Add space on bottom of the iframe -->
 </div>
 <a href="index.html">Back</a> <!-- Adjust the href attribute to point to your home page -->
 </body>
